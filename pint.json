@@ -1,0 +1,22 @@
+{
+    "preset": "laravel",
+    "rules": {
+        "simplified_null_return": true,
+        "braces": false,
+        "new_with_braces": {
+            "anonymous_class": true,
+            "named_class": true
+        },
+        "psr_autoloading": {
+            "dir" : "./app"
+        }
+    },
+    "exclude": [
+        "docker/",
+        ".docker/",
+        "public/",
+        "storage/",
+        "node_modules/",
+        "bootstrap/"
+    ]
+}

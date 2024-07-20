@@ -1,0 +1,318 @@
+.account-options-wrapper {
+    width: 100%;
+    height: auto;
+    padding: 45px 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.account-options-wrapper .account-options:first-child {
+    margin-right: 35px;
+}
+
+.account-options-wrapper .account-options {
+    max-width: 200px;
+    width: 200px;
+    min-height: 164px;
+    padding: 23px 10px;
+    background-color: #fff;
+    box-shadow: 0px 1px 10px rgba(218, 229, 239, 0.9);
+    text-decoration: none;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease;
+    border: 2px solid #fff;
+    flex: 1 1 auto;
+}
+
+.account-options-wrapper .account-options:hover {
+    border: 2px solid #5E4C2A;
+}
+
+.account-options-wrapper .account-options img {
+    max-width: 90px;
+    max-height: 70px;
+    object-fit: contain;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.account-options-wrapper .account-options p {
+    text-align: center;
+    flex: 1 1 auto;
+    font-size: 18px;
+    font-family: "Manrope";
+    font-weight: 600;
+    font-style: normal;
+    color: #5E4C2A;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+    .payment-history-wrapper .product-manage-heading.product-review-heading.account-header .header-select h3 {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px) {
+    .account-options-wrapper {
+        flex-flow: column wrap;
+        align-items: center;
+    }
+
+    .account-options-wrapper .account-options:first-child {
+        margin-right: 0;
+        margin-bottom: 25px;
+    }
+}
+
+.carInfo {
+    border-top: 1px solid #5e4c2a;
+    margin-top: 26px;
+    padding-top: 38px;
+}
+
+.account-btns-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-btns-wrap .account-btns {
+    margin-right: 8px;
+}
+
+.account-btns-wrap .account-btns:last-child {
+    margin-right: 0;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select h3 {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select {
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .account-btns-wrap {
+        flex-flow: column wrap;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select .account-btns {
+        width: auto !important;
+        margin-right: 0px;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select .account-btns .attach-btn {
+        min-width: 160px;
+        margin-bottom: 10px;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select h3 {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .account-options-wrapper .account-options:first-child {
+        margin-right: 24px;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select {
+        justify-content: center;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select h3 {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select .account-btns .attach-btn {
+        min-width: 160px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select {
+        justify-content: center;
+        flex-flow: column wrap;
+    }
+
+    .account-btns-wrap {
+        flex-flow: column wrap;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select .account-btns {
+        width: auto !important;
+        margin-right: 0px;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select .account-btns .attach-btn {
+        min-width: 160px;
+        margin-bottom: 10px;
+    }
+
+    .vendor-portal-wrap .product-review-heading.header-detatch .header-select h3 {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+}
+
+/* Modal css */
+.theme-modal .modal-dialog .modal-content {
+    border-radius: 14px;
+    border: 0px;
+    padding: 32px 23px;
+}
+
+.theme-modal .modal-dialog .modal-content .modal-header {
+    border-bottom: none;
+    padding: 0;
+}
+
+.theme-modal .modal-dialog .modal-content .modal-header h4 {
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: Planc;
+    font-weight: 600;
+    font-style: normal;
+    color: #F2EAD4;
+    margin-bottom: 10px;
+}
+
+.theme-modal .modal-dialog .modal-content .close {
+    background: #356746;
+    height: 35px;
+    width: 35px;
+    border: 2px solid #fff;
+    position: absolute;
+    z-index: 990009;
+    right: -15px;
+    top: -15px;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border-radius: 50%;
+    color: #FFFFFF;
+    transition: all 0.3s ease;
+}
+
+.theme-modal .modal-dialog .modal-content .close:hover {
+    background: #FFFFFF;
+    color: #356746;
+}
+
+.theme-modal .modal-dialog .modal-content .modal-body {
+    padding: 0;
+}
+
+.theme-modal.with-head-modal .add-review-modal-wrap h5 {
+    font-size: 16px;
+    font-family: Planc;
+    font-weight: 600;
+    font-style: normal;
+    color: #F2EAD4;
+}
+
+.theme-modal.with-head-modal .add-review-modal-wrap p {
+    font-size: 16px;
+    font-family: Planc;
+    font-weight: 400;
+    font-style: normal;
+    color: #F2EAD4;
+}
+
+.theme-modal.with-head-modal .add-review-modal-wrap p span{
+    font-family: 'proxima-nova';
+}
+
+.theme-modal .theme-modal-buttons .black-btn {
+    cursor: pointer;
+    display: inline-block;
+    height: 46px;
+    min-width: 160px;
+    margin-right: 10px;
+    text-align: center;
+    background-color: #EDFA70;
+    border: 1px solid #5E4C2A;
+    border-radius: 23px;
+    color: #5E4C2A;
+    font-size: 16px;
+    font-family: Planc;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.theme-modal .theme-modal-buttons .black-btn:hover {
+    background-color: #5E4C2A;
+    border: 1px solid #5E4C2A;
+    color: #EDFA70;
+}
+
+.theme-modal .theme-modal-buttons .white-btn {
+    cursor: pointer;
+    display: inline-block;
+    height: 46px;
+    min-width: 160px;
+    text-align: center;
+    background-color: #356746;
+    border: 1px solid #FFFFFF;
+    border-radius: 23px;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-family: Planc;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 20px;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+.theme-modal .theme-modal-buttons .white-btn:hover {
+    background-color: #FFFFFF;
+    border: 1px solid #356746;
+    color: #356746;
+}
+
+@media screen and (min-width: 0px) and (max-width: 575px) {
+
+    .theme-modal .theme-modal-buttons .black-btn,
+    .theme-modal .theme-modal-buttons .white-btn {
+        height: 36px;
+        min-width: 110px;
+        font-size: 12px;
+    }
+
+    .theme-modal .theme-modal-buttons .black-btn {
+        margin-right: 5px;
+    }
+
+    .theme-modal .modal-dialog .modal-content {
+        padding: 20px 15px;
+    }
+}
+
+@media screen and (min-width: 0px) and (max-width: 1199px) {
+    .account-btns-wrap {
+        width: 100%;
+    }
+}

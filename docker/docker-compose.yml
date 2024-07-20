@@ -1,0 +1,74 @@
+version: '2.0'
+services:
+
+  #PHP Service
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${COMPOSE_PROJECT_NAME}/php
+    container_name: ${COMPOSE_PROJECT_NAME}_php_service
+    restart: unless-stopped
+    tty: true
+    volumes:
+       - ../:/var/www/html/
+       - ./supervisor:/etc/supervisor/conf.d
+       - ./php.ini:/usr/local/etc/php/conf.d/${COMPOSE_PROJECT_NAME}_php.ini
+    environment:
+      SERVICE_NAME: ${COMPOSE_PROJECT_NAME}_php_service
+      SERVICE_TAGS: dev
+    working_dir: /var/www/html/
+    networks:
+      - app-network
+
+  #Nginx Service
+  webserver:
+    image: nginx:alpine
+    container_name: ${COMPOSE_PROJECT_NAME}_webserver
+    restart: unless-stopped
+    tty: true
+    volumes:
+       - ../:/var/www/html
+       - ./nginx.conf:/etc/nginx/templates/default.conf.template
+      #  - /etc/letsencrypt/live/{project_name}/fullchain.pem:/etc/cert/fullchain.pem
+      #  - /etc/letsencrypt/live/{project_name}/privkey.pem:/etc/cert/privkey.pem
+    ports:
+      - "${HTTP_PORT}:80"
+      # - "${HTTPS_PORT}:443"
+    networks:
+      - app-network
+    environment:
+      - PHP_SERVICE=${COMPOSE_PROJECT_NAME}_php_service
+
+  #MySQL Service
+  db:
+    image: mysql:5.7.32
+    container_name: ${COMPOSE_PROJECT_NAME}_db
+    restart: unless-stopped
+    tty: true
+    volumes:
+      - ./.mysql:/var/lib/mysql
+    ports:
+      - "${MYSQL_PORT}:3306"
+    environment:
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      SERVICE_TAGS: dev
+      SERVICE_NAME: ${COMPOSE_PROJECT_NAME}_mysql
+    networks:
+      - app-network
+
+  cache:
+    image: redis:7.0.4-alpine
+    restart: always
+    # ports:
+    #   - '6379:6379'
+    command: redis-server --save 20 1 --loglevel warning --requirepass ${REDIS_PASSWORD}
+    volumes: 
+      - ./.redis:/data
+    networks:
+      - app-network
+#Docker Networks
+networks:
+  app-network:
+    driver: bridge

@@ -1,0 +1,23 @@
+{
+  "name": "storage-manager",
+  "version": "1.0.0",
+  "description": "Storage Manager",
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/saqijaan/storage-manager.git"
+  },
+  "scripts": {
+    "start": "grapesjs-cli serve",
+    "build": "grapesjs-cli build",
+    "bump": "npm version patch -m 'Bump v%s'"
+  },
+  "keywords": [
+    "grapesjs",
+    "plugin"
+  ],
+  "devDependencies": {
+    "grapesjs-cli": "^3.0.1"
+  },
+  "license": "MIT"
+}

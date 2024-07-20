@@ -1,0 +1,153 @@
+.shipping-address-wrap {
+  padding: 94px 0 85px 0;
+}
+
+.shipping-wrap {
+  padding: 55px 0 0 0;
+}
+
+.time-line-wrap {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 44px 0 0 0;
+  padding-top: 15px;
+}
+
+.time-line-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #5e4c2a;
+}
+
+.time-line-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 1px;
+  background-color: #356746;
+}
+
+.time-line-end {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  width: 1px;
+  height: 20px;
+  background-color: #356746;
+}
+
+.golden-cart {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 25px;
+  height: 20px;
+}
+
+.time-line-wrap p {
+  width: 33.3%;
+  font-size: 16px;
+  font-weight: 400;
+  color: #5e4c2a;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.time-line-wrap p:nth-child(even) {
+  text-align: center;
+}
+
+.time-line-wrap p:last-child {
+  color: #356746;
+  text-align: right;
+}
+
+.shipping-item-main {
+  padding-right: 100px;
+}
+
+.shipping-item-main .get-form {
+  padding: 7px 0;
+  margin-bottom: 20px;
+}
+
+.shipping-item-main .col-sm-12 .get-form select.form-control {
+  background-position: 98% -15%;
+}
+
+.shipping-item-main .col-6 .get-form select.form-control {
+  background-position: 94% -15%;
+}
+
+.shipping-item-main .place-holder {
+  padding-top: 7px;
+}
+
+.shipping-item-main .place-holder .checkout-cart-button {
+  min-width: 180px;
+}
+
+.billing-address-show {
+  border-top: 1px solid #5E4C2A;
+  padding-top: 35px;
+  margin-top: 10px;
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .shipping-item-main {
+    padding-right: 75px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .shipping-item-main {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .shipping-item-main {
+    padding-right: 0px;
+  }
+
+  .shipping-address-wrap {
+    padding: 94px 0 50px 0;
+  }
+
+  .time-line-wrap p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .shipping-item-main {
+    padding-right: 0px;
+  }
+
+  .shipping-address-wrap {
+    padding: 70px 0 25px 0;
+  }
+
+  .time-line-wrap p {
+    font-size: 10px;
+  }
+
+  .shipping-wrap {
+    padding: 25px 0 0 0;
+  }
+
+  .billing-address-show {
+    padding-top: 25px;
+  }
+}

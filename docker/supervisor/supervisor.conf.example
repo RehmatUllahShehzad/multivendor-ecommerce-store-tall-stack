@@ -1,0 +1,8 @@
+[program:sample-queue]
+;command=php /var/www/html/artisan queue:work --queue=sample-queue --timeout=14400
+autostart=true
+autorestart=true
+
+
+stderr_logfile=/var/www/html/storage/logs/supervisor-error.log
+stdout_logfile=/var/www/html/storage/logs/supervisor-output.log

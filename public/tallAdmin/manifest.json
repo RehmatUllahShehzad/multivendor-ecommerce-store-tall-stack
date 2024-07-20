@@ -1,0 +1,22 @@
+{
+  "resources/js/app.js": {
+    "file": "assets/app.0085fd21.js",
+    "src": "resources/js/app.js",
+    "isEntry": true
+  },
+  "Editor/resources/js/index.js": {
+    "file": "assets/index.5ba60ce1.js",
+    "src": "Editor/resources/js/index.js",
+    "isEntry": true
+  },
+  "resources/css/app.css": {
+    "file": "assets/app.416cba42.css",
+    "src": "resources/css/app.css",
+    "isEntry": true
+  },
+  "Editor/resources/css/gjs.css": {
+    "file": "assets/gjs.d1a8a5bb.css",
+    "src": "Editor/resources/css/gjs.css",
+    "isEntry": true
+  }
+}

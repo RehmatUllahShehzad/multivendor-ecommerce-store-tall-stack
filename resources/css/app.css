@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+[x-cloak] {
+    display: none !important;
+}
+
+p>code {
+    @apply font-mono;
+    @apply text-sm;
+    @apply bg-gray-100;
+    @apply text-purple-600;
+}
+
+/* Add the lines below */
+@layer utilities {
+    .masonry {
+        column-count: 4;
+        column-gap: 1em;
+    }
+
+    .break-inside {
+        break-inside: avoid;
+    }
+}
+
+.sortable-ghost .sort-item-element {
+    @apply bg-blue-50;
+    @apply text-blue-600;
+    @apply border-blue-300;
+}
+
+.ql-editor {
+    @apply space-y-2;
+}
+
+@media print {
+    @page {
+        size: auto;
+        /* auto is the initial value */
+
+        /* this affects the margin in the printer settings */
+        margin: 25mm 25mm 25mm 25mm;
+    }
+
+    body {
+        /* this affects the margin on the content before sending to printer */
+        margin: 0px;
+    }
+
+    .no-print,
+    .no-print * {
+        display: none !important;
+    }
+
+    .printable.print-only {
+        display: block !important;
+    }
+
+    .printable.fixed {
+        position: relative;
+    }
+
+    .printable,
+    .wd-block {
+        display: block !important;
+    }
+
+    .order-summary-print {
+        order: -1;
+    }
+}

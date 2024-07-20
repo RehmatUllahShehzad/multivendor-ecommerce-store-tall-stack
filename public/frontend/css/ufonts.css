@@ -1,0 +1,57 @@
+
+
+@font-face {
+    font-family: 'Planc';
+    src: url('webfonts/planc-light.woff2') format('woff2'),
+         url('webfonts/planc-light.woff') format('woff'),
+         url('webfonts/planc-light.ttf') format('truetype'),
+         url('webfonts/planc-light.svg#planclight') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Planc';
+    src: url('webfonts/planc-regular.woff2') format('woff2'),
+         url('webfonts/planc-regular.woff') format('woff'),
+         url('webfonts/planc-regular.ttf') format('truetype'),
+         url('webfonts/planc-regular.svg#plancregular') format('svg');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Planc';
+    src: url('webfonts/planc-bold.woff2') format('woff2'),
+         url('webfonts/planc-bold.woff') format('woff'),
+         url('webfonts/planc-bold.ttf') format('truetype'),
+         url('webfonts/planc-bold.svg#plancbold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'proxima-nova';
+    src: url('webfonts/proximanovaregular.woff2') format('woff2'),
+         url('webfonts/proximanovaregular.woff') format('woff'),
+         url('webfonts/proximanovaregular.ttf') format('truetype'),
+         url('webfonts/proximanovaregular.svg#proxima_novaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'PP Woodland';
+    src: url('webfonts/PPWoodland-Regular.eot');
+    src: url('webfonts/PPWoodland-Regular.eot?#iefix') format('embedded-opentype'),
+        url('webfonts/PPWoodland-Regular.woff2') format('woff2'),
+        url('webfonts/PPWoodland-Regular.woff') format('woff'),
+        url('webfonts/PPWoodland-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

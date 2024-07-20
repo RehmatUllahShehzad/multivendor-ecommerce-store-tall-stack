@@ -1,0 +1,520 @@
+.place-order-wrap .time-line-right {
+  background-color: #5e4c2a;
+}
+
+.place-order-wrap .golden-cart {
+  right: 44px;
+  left: unset;
+  transform: unset;
+}
+
+.place-order-wrap .time-line-wrap p:last-child {
+  color: #5e4c2a;
+}
+
+.place-order-wrap .subtotal .order-summary .get-started-form-button a {
+  margin-bottom: 15px;
+}
+
+.place-order-wrap .subtotal p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 0;
+  color: #5e4c2a;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.place-order-wrap .subtotal span {
+  font-weight: 700;
+}
+
+.place-order-wrap .subtotal .order-summary .get-started-form-button p a {
+  min-width: auto;
+  height: auto;
+  font-weight: 400;
+  color: #0e55b8;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  display: contents;
+  font-family: planc;
+  text-transform: lowercase;
+}
+
+.place-order-wrap .subtotal .order-summary .get-started-form-button p a:hover {
+  color: #5e4c2a;
+}
+
+.place-order-wrap .billing-text p,
+.place-order-wrap .billing-price p {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.billing-text p {
+  text-align: left !important;
+}
+
+.billing-price p {
+  text-align: right !important;
+}
+
+.place-order-wrap .your-total-main {
+  margin-bottom: 16px;
+}
+
+.your-grand-total {
+  border-top: 1px solid #5e4c2a;
+  padding-top: 25px;
+}
+
+.place-order-wrap .your-grand-total .billing-text p,
+.place-order-wrap .your-grand-total .billing-price p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.shopped .shipping-address-info img {
+  border-radius: 0;
+}
+
+.first-shopped-section {
+  position: relative;
+  border-top: 1px solid #5e4c2a;
+}
+
+.shipping-address-info {
+  padding-top: 5px;
+}
+
+.shipping-address-info h4 {
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5e4c2a;
+  padding-bottom: 10px;
+}
+
+.shipping-address-info h4 a {
+  margin-left: 12px;
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  color: #0E55B8;
+  text-decoration: none;
+}
+
+.shipping-address-info h4 a:hover {
+  text-decoration: underline;
+}
+
+.shipping-address-info button {
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  color: #0E55B8;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.shipping-address-info button.show:after {
+  content: "";
+  position: absolute;
+  left: 10px;
+  bottom: -25px;
+  width: 1rem;
+  height: 1rem;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.place-order-shopped .shopped h3 {
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  color: #5e4c2a;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.place-order-shopped .shopped h4 {
+  margin-bottom: 15px;
+  display: block;
+}
+
+.place-order-shopped .shopped h5 {
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #5e4c2a;
+  margin-bottom: 10px;
+}
+
+.place-order-shopped .shopped h5 span {
+  font-weight: 400;
+}
+
+.place-order-shopped .shopped h5 a {
+  margin-left: 8px;
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  color: #0E55B8;
+  text-decoration: none;
+}
+
+.place-order-shopped .shopped h5 a:hover {
+  text-decoration: underline;
+}
+
+/* .choose-delivery h4 {
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  color: #5e4c2a;
+  padding-bottom: 10px;
+} */
+.choose-delivery {
+  float: right;
+}
+
+.choose-delivery p span {
+  font-size: 12px;
+  float: right;
+}
+
+.choose-delivery-btn input {
+  vertical-align: top;
+}
+
+.choose-delivery-btn {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 16px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.choose-delivery-btn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.choose-delivery .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.choose-delivery .choose-delivery-btn:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+/* .choose-delivery-btn input:checked ~ .checkmark {
+  background-color: #5e4c2a;
+} */
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.choose-delivery .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.choose-delivery .choose-delivery-btn input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.choose-delivery .choose-delivery-btn .checkmark:after {
+  top: 2px;
+  left: 2px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #5e4c2a;
+}
+
+.delivery-instructions {
+  position: absolute;
+  display: none;
+  width: 100%;
+  background-color: white;
+  height: 210px;
+  left: 0;
+  bottom: -120px;
+  z-index: 200;
+  padding: 20px;
+}
+
+.delivery-box-dialog {
+  width: 100%;
+}
+
+.triangle-up {
+  position: absolute;
+  top: -10px;
+  width: 1rem;
+  height: 1rem;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid white;
+}
+
+.delivery-box-body textarea {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  border: 1px solid #5e4c2a;
+  resize: none;
+  font-family: 'Planc';
+  font-style: normal;
+  font-weight: 450;
+  font-size: 13px;
+  color: #5e4c2a;
+  padding: 8px 12px;
+}
+
+.delivery-box-body textarea:focus-visible {
+  outline: none;
+}
+
+.delivery-box-footer {
+  text-align: right;
+}
+
+.delivery-box-footer button {
+  min-width: 140px;
+  height: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: #5e4c2a;
+  background-color: #edfa70;
+  border: 1px solid #5e4c2a;
+  border-radius: 38px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  padding-top: 3px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .place-order-wrap .your-grand-total .billing-text p,
+  .place-order-wrap .your-grand-total .billing-price p {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .place-order-wrap .your-grand-total .billing-text p,
+  .place-order-wrap .your-grand-total .billing-price p {
+    font-size: 18px;
+  }
+
+  .place-order-shopped .shopped p {
+    font-size: 12px;
+  }
+
+  .place-order-wrap .subtotal p {
+    font-size: 14px;
+  }
+
+  .place-order-wrap .subtotal .order-summary .get-started-form-button p a {
+    font-size: 14px;
+  }
+
+  .shipping-address-info button {
+    font-size: 12px;
+  }
+
+  .shipping-address-info h4 a {
+    font-size: 12px;
+  }
+
+  .shipping-address-info h4 {
+    font-size: 15px;
+  }
+
+  .place-order-shopped .shopped h6 {
+    font-size: 12px;
+  }
+
+  .place-order-shopped .shopped h3 {
+    font-size: 16px;
+  }
+
+  .place-order-shopped .shopped h4 {
+    font-size: 18px;
+  }
+
+  .choose-delivery p span {
+    font-size: 10px;
+  }
+
+  .choose-delivery-btn {
+    padding-left: 18px;
+  }
+
+  .place-order-shopped .shopped h5 {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+  .place-order-wrap .your-grand-total .billing-text p,
+  .place-order-wrap .your-grand-total .billing-price p {
+    font-size: 18px;
+  }
+
+  .place-order-shopped .shopped p {
+    font-size: 12px;
+  }
+
+  .place-order-wrap .subtotal p {
+    font-size: 14px;
+  }
+
+  .place-order-wrap .subtotal .order-summary .get-started-form-button p a {
+    font-size: 14px;
+  }
+
+  .shipping-address-info button {
+    font-size: 12px;
+  }
+
+  .shipping-address-info h4 a {
+    font-size: 12px;
+  }
+
+  .shipping-address-info h4 {
+    font-size: 15px;
+  }
+
+  .place-order-shopped .shopped h6 {
+    font-size: 12px;
+  }
+
+  .place-order-shopped .shopped h3 {
+    font-size: 16px;
+  }
+
+  .place-order-shopped .shopped h4 {
+    font-size: 18px;
+  }
+
+  .choose-delivery p span {
+    font-size: 10px;
+  }
+
+  .choose-delivery-btn {
+    padding-left: 18px;
+  }
+
+  .place-order-shopped .shopped h5 {
+    margin-bottom: 6px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .choose-delivery {
+    float: left;
+  }
+
+  .place-order-shopped .shopped h3 {
+    font-size: 15px;
+  }
+
+  .place-order-shopped .shopped h4 {
+    font-size: 16px;
+    padding-top: 0;
+  }
+
+  .shipping-address-info button {
+    font-size: 12px;
+  }
+
+  .place-order-shopped .shopped .choose-delivery h4 {
+    padding-top: 15px;
+  }
+
+  .place-order-wrap .subtotal p {
+    font-size: 14px;
+  }
+
+  .place-order-wrap .subtotal .order-summary {
+    padding-top: 20px;
+  }
+
+  .place-order-wrap .subtotal .order-summary .get-started-form-button p a {
+    font-size: 14px;
+  }
+
+  .place-order-wrap .your-grand-total .billing-text p,
+  .place-order-wrap .your-grand-total .billing-price p {
+    font-size: 18px;
+  }
+
+  .shipping-address-info {
+    position: relative;
+  }
+
+  .first-shopped-section {
+    position: static;
+  }
+
+  .delivery-instructions {
+    bottom: -205px;
+  }
+}
+/* for reducing the padding bottom on sell-now.php page 19/7/2022 */
+.get-started.sell-now-from{
+  padding-bottom: 155px;
+}
+@media screen and (min-width: 0px) and (max-width: 768px){
+  .get-started.sell-now-from {
+      padding-bottom: 70px;
+  }
+}
+/* for increasing the weight of text in order summary on checkout-payment.php 19/7/2022 */
+.ship-pay-info.info-shippment p{
+  font-weight: 600;
+}
+.ship-pay-info.info-shippment p span{
+  font-weight: 600;
+}
